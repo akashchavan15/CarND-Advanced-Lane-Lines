@@ -14,11 +14,11 @@ First we need to do camera calibration with known images which has object whose 
 Camera calibration gives us Calibration matrix and distiortion coefficients which are used later to remove the distortion in an image
 
 * Start with image or frame from video clip
-<img src="test_images/straight_lines1.jpg" width="480" alt="Combined Image" />
+<img src="output_images/straight_lines1.jpg" width="480" alt="straight_lines1" />
 
 * Correct Distortion 
 Distortion is corrected using the calibration matrix found in above step along with distortion coefficients. 
-<img src="test_images/Undistorted_Image_straight_lines1.jpg" width="480" alt="Combined Image" />
+<img src="output_images/Undistorted_Image_straight_lines1.jpg" width="480" alt="Undistorted_Image_straight_lines1" />
 
 * Color and Gradient Thresholding
 To find the lane lines correctly, we first need to understand what characteristics of an image can be used to correctly <br />
@@ -29,4 +29,4 @@ To threshold the gradient image I have come up with a function that automaticall
 instead of using predefined fix values. The function takes the histogram of magnitude of gradients and finds thresholds. At the end <br />
 gradient direction threshold is applied to get lines which have required orientation. <br />
 At the end both color and gradient binaries are combined to get final thresholded binary image. 
-<img src="test_images/Binary_Thresholded_Image_straight_lines1.jpg" width="480" alt="Combined Image" />
+<img src="output_images/Binary_Thresholded_Image_straight_lines1.jpg" width="480" alt="Binary_Thresholded_Image_straight_lines1.jpg" />
