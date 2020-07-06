@@ -33,7 +33,7 @@ At the end both color and gradient binaries are combined to get final thresholde
 * Perspective Transform <br />
 Binary threholded image is then warped to get the bird's eye view which makes us to see the lane lines correctly. If lane lines <br />
 are parallel in the scene then they remain parallel after applying perspective transform. For the perspective transform we need to <br />
-select four source points as a trapezoid to map to the corresponding points in the destination image. I have manually found the source and <br />
+select four source points as a trapezoid to map to the corresponding points in the destination image. I have manually found the source and
 destinations points by trial and error method. These points are then used to get the trasformation matrices to do warping and de-warping. 
 <img src="output_images/Binary_Warped_Image_straight_lines1.jpg" width="480" alt="Binary_Warped_Image_straight_lines1" />
 <img src="output_images/Color_Warped_Image_straight_lines1.jpg" width="480" alt="Color_Warped_Image_straight_lines1" />
