@@ -37,3 +37,23 @@ select four source points as a trapezoid to map to the corresponding points in t
 destinations points by trial and error method. These points are then used to get the trasformation matrices to do warping and de-warping. 
 <img src="output_images/Binary_Warped_Image_straight_lines1.jpg" width="480" alt="Binary_Warped_Image_straight_lines1" />
 <img src="output_images/Color_Warped_Image_straight_lines1.jpg" width="480" alt="Color_Warped_Image_straight_lines1" />
+
+
+* Finding Lane Lines <br />
+Here comes the most tedius part of the project. The warped binary image is used for finding the lane lines. First I get rid of the area <br />
+of image which I don't need for finding lanes lines. I then take the histogram of bottom half of the image. Peaks in the histogram give <br />
+me the starting point for the left and right lane lines. A sliding window search is then performed to find all pixels which belong to lane <br />
+lines. I then fit the polynomial on the lane lines pixels I have found. This operation is performed only on the first image. For the subsequent <br />
+frames I serach for lanes pixels around already found lane lines. This makes the algorithm more efficient. Once the polynomial is fit, an interpolation <br />
+is used to cover all the points between two lane lines. 
+<img src="output_images/Sliding_Window_Image_straight_lines1.jpg" width="480" alt="Sliding_Window_Image_straight_lines1" />
+
+
+* Calcualte Radius of Curvature and Center Distance <br />
+Furthermore, the radius of curvature for both the lane lines is calcualted along with the center distance. Pixel to meter ratios are <br /> 
+used to get the real world radius of curvature. 
+
+* Final Output <br />
+Finally, I unwarped the image and then a final weighted image is created with overlays drawn on it along with the texts for radius <br />
+of curvature and center distance. 
+<img src="output_images/Final_De_warped_Image_straight_lines1.jpg" width="480" alt="Final_De_warped_Image_straight_lines1" />
