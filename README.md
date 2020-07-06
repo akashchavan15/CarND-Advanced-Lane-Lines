@@ -57,3 +57,19 @@ used to get the real world radius of curvature.
 Finally, I unwarped the image and then a final weighted image is created with overlays drawn on it along with the texts for radius <br />
 of curvature and center distance. 
 <img src="output_images/Final_De_warped_Image_straight_lines1.jpg" width="480" alt="Final_De_warped_Image_straight_lines1" />
+
+Outcome
+---
+The proposed solution works best with test images and project video. Needless to say that it failed miserably on challenge video. <br />
+One potential shortcoming with this approch is, the algorithm does not work well when there are many shadows on the road and lanes lines are faded. <br />
+It also doesn't work well then there are false edges on the roads such as those creted due to construction. 
+
+Possible Improvement
+---
+There is a much scope to improve this algorithm. First thing would be to investigate other color spaces which do good job on specific types of lane <br />
+lines. Secondly, the algorithm needs to have a mechanism to automatically switch to different color spaces based upon some detection. 
+And last but not the least,for the source points which are needed for perspective transform are currently hard coded, I have tried some feature detectors <br />
+like Harris Corner Detector and SURF to get those points during run time and we won't need to hard code them. But, it did not work as I expected.
+It needs further investigation. 
+
+The result can be seen in this [Video](https://github.com/akashchavan15/CarND-Advanced-Lane-Lines/blob/master/output_images/project_video.mp4)
