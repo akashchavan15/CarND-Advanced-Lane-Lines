@@ -62,7 +62,7 @@ Outcome
 ---
 The proposed solution works best with test images and project video. Needless to say that it failed miserably on challenge video. <br />
 One potential shortcoming with this approch is, the algorithm does not work well when there are many shadows on the road and lanes lines are faded. <br />
-It also doesn't work well then there are false edges on the roads such as those creted due to construction. 
+It also doesn't work well when there are false edges on the roads such as those created due to construction. 
 
 Possible Improvement
 ---
