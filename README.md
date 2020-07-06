@@ -66,9 +66,9 @@ It also doesn't work well when there are false edges on the roads such as those 
 
 Possible Improvement
 ---
-There is a much scope to improve this algorithm. First thing would be to investigate other color spaces which do good job on specific types of lane <br />
+There is a much scope to improve this algorithm. First thing would be to investigate other color spaces which do good job on specific types of lane
 lines. Secondly, the algorithm needs to have a mechanism to automatically switch to different color spaces based upon some detection. 
-And last but not the least,for the source points which are needed for perspective transform are currently hard coded, I have tried some feature detectors <br />
+And last but not the least,for the source points which are needed for perspective transform are currently hard coded, I have tried some feature detectors 
 like Harris Corner Detector and SURF to get those points during run time and we won't need to hard code them. But, it did not work as I expected.
 It needs further investigation. 
 
