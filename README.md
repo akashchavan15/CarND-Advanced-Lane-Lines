@@ -20,7 +20,7 @@ Distortion is corrected using the calibration matrix found in above step along w
 <img src="output_images/Undistorted_Image_straight_lines1.jpg" width="480" alt="Undistorted_Image_straight_lines1" />
 
 * Color and Gradient Thresholding
-To find the lane lines correctly, we first need to understand what characteristics of an image can be used to correctly <br />
+To find the lane lines correctly, we first need to understand what characteristics of an image can be used to correctly
 extract lane lines. Here, I have used HSV color space, since yellow lines are clearly visible in S channel. The extracted S <br />
 channel image is then thresholded with predefined threshold values to get binary image. For the computation of x and y gradients <br />
 I used the L channel from the input image. I have used Sobel operator with Kernel size of 3 to get the gradients.<br />
