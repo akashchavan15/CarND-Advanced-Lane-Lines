@@ -15,11 +15,11 @@ Camera calibration gives us Calibration matrix and distiortion coefficients whic
 * Start with image or frame from video clip
 <img src="test_images/straight_lines1.jpg" width="480" alt="straight_lines1" />
 
-* Correct Distortion 
+* Correct Distortion <br />
 Distortion is corrected using the calibration matrix found in above step along with distortion coefficients. 
 <img src="output_images/Undistorted_Image_straight_lines1.jpg" width="480" alt="Undistorted_Image_straight_lines1" />
 
-* Color and Gradient Thresholding
+* Color and Gradient Thresholding <br />
 To find the lane lines correctly, we first need to understand what characteristics of an image can be used to correctly
 extract lane lines. Here, I have used HSV color space, since yellow lines are clearly visible in S channel. The extracted S <br />
 channel image is then thresholded with predefined threshold values to get binary image. For the computation of x and y gradients <br />
