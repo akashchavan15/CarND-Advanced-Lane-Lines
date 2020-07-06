@@ -1,5 +1,5 @@
 ## Advanced Lane Finding
-<img src="output_images/video_out.jpg" width="960" height="480" alt="video_out" />
+<img src="output_images/video_out_curve.jpg" width="960" height="480" alt="video_out_curve" />
 
 In this project, our goal is to write a software pipeline to identify the lane boundaries in a video.
 
