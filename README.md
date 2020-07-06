@@ -1,6 +1,5 @@
 ## Advanced Lane Finding
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
-![Lanes Image](./examples/example_output.jpg)
+<img src="output_images/video_out.jpg" width="720" alt="video_out" />
 
 In this project, our goal is to write a software pipeline to identify the lane boundaries in a video.
 
@@ -14,7 +13,7 @@ First we need to do camera calibration with known images which has object whose 
 Camera calibration gives us Calibration matrix and distiortion coefficients which are used later to remove the distortion in an image
 
 * Start with image or frame from video clip
-<img src="output_images/straight_lines1.jpg" width="480" alt="straight_lines1" />
+<img src="test_images/straight_lines1.jpg" width="480" alt="straight_lines1" />
 
 * Correct Distortion 
 Distortion is corrected using the calibration matrix found in above step along with distortion coefficients. 
