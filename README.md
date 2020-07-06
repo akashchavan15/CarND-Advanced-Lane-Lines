@@ -44,7 +44,7 @@ Here comes the most tedius part of the project. The warped binary image is used 
 of image which I don't need for finding lanes lines. I then take the histogram of bottom half of the image. Peaks in the histogram give <br />
 me the starting point for the left and right lane lines. A sliding window search is then performed to find all pixels which belong to lane <br />
 lines. I then fit the polynomial on the lane lines pixels I have found. This operation is performed only on the first image. For the subsequent <br />
-frames I serach for lanes pixels around already found lane lines. This makes the algorithm more efficient. Once the polynomial is fit, an interpolation <br />
+frames I serach for lanes pixels around already found lane lines. This makes the algorithm more efficient. Once the polynomial is fit, an interpolation
 is used to cover all the points between two lane lines. 
 <img src="output_images/Sliding_Window_Image_straight_lines1.jpg" width="480" alt="Sliding_Window_Image_straight_lines1" />
 
