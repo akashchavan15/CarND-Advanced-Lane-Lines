@@ -8,7 +8,7 @@ Pipeline
 ---
 My pipeline mainly consist of following functionalities which are distributed across different classes
 
-* Camera Calibration
+* Camera Calibration <br />
 First we need to do camera calibration with known images which has object whose physical geometry is known to us. <br />
 Camera calibration gives us Calibration matrix and distiortion coefficients which are used later to remove the distortion in an image
 
